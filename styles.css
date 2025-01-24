@@ -1,0 +1,97 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #E0F2E9; /* Main Background Color */
+    color: #3C887E; /* Main Text Color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Container for the game */
+.container {
+    text-align: center;
+    background: #ffffff; /* White Background for Contrast */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft Shadow */
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid #3C887E; /* Secondary Color Border */
+}
+
+/* Heading Style */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #3C887E; /* Secondary Color */
+}
+
+/* Input Field */
+input[type="number"] {
+    width: 80%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #3C887E; /* Secondary Color Border */
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #3C887E; /* Highlight on Focus */
+    outline: none;
+    box-shadow: 0 0 8px rgba(60, 136, 126, 0.5); /* Glow Effect */
+}
+
+/* Button Style */
+button {
+    background-color: #3C887E; /* Secondary Color */
+    color: #ffffff; /* White Text */
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #2d665c; /* Darker Shade on Hover */
+    transform: scale(1.05); /* Slight Scale Effect */
+}
+
+button:active {
+    background-color: #1e4c46; /* Even Darker Shade on Click */
+}
+
+/* Message Display */
+#message {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+/* Score and Attempts Display */
+#score, #highScore, #attempts {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #3C887E; /* Secondary Color */
+}
+
+/* Add Responsive Design */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
