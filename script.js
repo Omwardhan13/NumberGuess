@@ -58,7 +58,7 @@ function submitGuess() {
         highScore = Math.max(highScore, currentScore);
 
         message.textContent = `🎉 You Won! You earned ${points} points!`;
-        message.style.color = 'green';
+        message.style.color = 'black';
 
         scoreDisplay.textContent = `Score: ${currentScore}`;
         highScoreDisplay.textContent = `High Score: ${highScore}`;
