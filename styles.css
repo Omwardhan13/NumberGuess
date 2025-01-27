@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #E0F2E9; /* Main Background Color */
+    background-image: url("bg.jpg") /* Main Background Color */
     color: #3C887E; /* Main Text Color */
     display: flex;
     justify-content: center;
