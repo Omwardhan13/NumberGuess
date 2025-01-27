@@ -1,43 +1,50 @@
 /* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
     background-image: url("bg.jpg"); /* Main Background Color */
-    color: #3C887E; /* Main Text Color */
+    color: black; /* Main Text Color */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     box-sizing: border-box;
+    background-position: center;
 }
 
 /* Container for the game */
 .container {
     text-align: center;
-    background: #ffffff; /* White Background for Contrast */
     padding: 30px;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 40, 40, 40, 0.4 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
     border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft Shadow */
     width: 90%;
     max-width: 400px;
-    border: 2px solid #3C887E; /* Secondary Color Border */
+    border: 1px solid white; /* Secondary Color Border */
+    margin: 20px auto;
 }
 
 /* Heading Style */
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #3C887E; /* Secondary Color */
+    color: black; /* Secondary Color */
 }
 
 /* Input Field */
 input[type="number"] {
+  background-color: #ffffff33;
     width: 80%;
     padding: 12px;
     font-size: 1rem;
-    border: 2px solid #3C887E; /* Secondary Color Border */
-    border-radius: 8px;
+    border: 1px solid white; /* Secondary Color Border */
+    border-radius: 15px;
     text-align: center;
     margin-bottom: 15px;
     box-sizing: border-box;
@@ -45,17 +52,21 @@ input[type="number"] {
 }
 
 input[type="number"]:focus {
-    border-color: #3C887E; /* Highlight on Focus */
+    border-color: black; /* Highlight on Focus */
     outline: none;
     box-shadow: 0 0 8px rgba(60, 136, 126, 0.5); /* Glow Effect */
 }
 
+input::placeholder {
+  color: rgba(80, 80, 80, 1);
+}
+
 /* Button Style */
 button {
-    background-color: #3C887E; /* Secondary Color */
+    background-color: black; /* Secondary Color */
     color: #ffffff; /* White Text */
     border: none;
-    border-radius: 8px;
+    border-radius: 15px;
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
@@ -63,12 +74,12 @@ button {
 }
 
 button:hover {
-    background-color: #2d665c; /* Darker Shade on Hover */
+    background-color: grey; /* Darker Shade on Hover */
     transform: scale(1.05); /* Slight Scale Effect */
 }
 
 button:active {
-    background-color: #1e4c46; /* Even Darker Shade on Click */
+    background-color: lightgrey; /* Even Darker Shade on Click */
 }
 
 /* Message Display */
@@ -81,17 +92,9 @@ button:active {
 #score, #highScore, #attempts {
     font-size: 1rem;
     margin: 5px 0;
-    color: #3C887E; /* Secondary Color */
+    color: black; /* Secondary Color */
 }
 
 /* Add Responsive Design */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 2rem;
-    }
 
-    button {
-        font-size: 0.9rem;
-        padding: 8px 15px;
-    }
 }
