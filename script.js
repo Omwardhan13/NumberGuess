@@ -35,16 +35,16 @@ function submitGuess() {
                 points = 10;
                 break;
             case 6:
-                points = 8;
+                points = 9;
                 break;
             case 5:
-                points = 5;
+                points = 8;
                 break;
             case 4:
-                points = 4;
+                points = 6;
                 break;
             case 3:
-                points = 3;
+                points = 4;
                 break;
             case 2:
                 points = 2;
@@ -75,6 +75,7 @@ function submitGuess() {
         if (attemptsLeft > 0) {
             message.textContent = guess < randomNumber ? 'Too low! Try again.' : 'Too high! Try again.';
             message.style.color = 'red';
+message.style.textShadow = '2px 2px 4px black';
             attemptsDisplay.textContent = `Attempts left: ${attemptsLeft}`;
         } else {
             message.textContent = `💔 Game Over! The correct number was ${randomNumber}.`;
