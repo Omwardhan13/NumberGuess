@@ -75,7 +75,7 @@ function submitGuess() {
         if (attemptsLeft > 0) {
             message.textContent = guess < randomNumber ? 'Too low! Try again.' : 'Too high! Try again.';
             message.style.color = 'red';
-message.style.textShadow = '2px 2px 4px black';
+message.style.textShadow = '1px 1px 4px lightgrey';
             attemptsDisplay.textContent = `Attempts left: ${attemptsLeft}`;
         } else {
             message.textContent = `💔 Game Over! The correct number was ${randomNumber}.`;
