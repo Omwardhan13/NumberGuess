@@ -54,7 +54,7 @@ input[type="number"] {
 input[type="number"]:focus {
     border-color: black; /* Highlight on Focus */
     outline: none;
-    box-shadow: 0 0 8px rgba(60, 136, 126, 0.5); /* Glow Effect */
+    box-shadow: 0 0 8px rgba(10, 10, 10, 0.5); /* Glow Effect */
 }
 
 input::placeholder {
